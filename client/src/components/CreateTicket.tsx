@@ -143,8 +143,8 @@ export function CreateTicket({ onCreated }: { onCreated: (ticketNumber: string, 
       <h1>Create Ticket</h1>
 
       <div className="field" data-readonly="true">
-        <label>Requester</label>
-        <input value={requesterName ?? ""} readOnly />
+        <label htmlFor="requester">Requester</label>
+        <input id="requester" value={requesterName ?? ""} readOnly />
       </div>
 
       {apiError && <div className="callout callout-error" role="alert">{apiError}</div>}
